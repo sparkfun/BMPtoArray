@@ -1,6 +1,6 @@
 '''
 
-    This script takes in a bitmap and outputs a text file that is an
+    This script takes in a bitmap and outputs a text file that is a
     byte array used in Arduino header files.
 
     You'll need python 2.7
@@ -27,11 +27,10 @@
 #https://github.com/yy502/ePaperDisplay
 
 import sys
-from binascii import hexlify
 import struct
 
 #Open our input file which is defined by the first commandline argument
-#then dump it out into list of bytes
+#then dump it into a list of bytes
 infile = open(sys.argv[1],"rb") #b is for binary
 contents = bytearray(infile.read())
 infile.close()

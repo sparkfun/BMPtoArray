@@ -14,9 +14,17 @@ Three bitmaps are provided as an example. Requires python v2.7.
 Usage:
 
     python bmptoarray.py macaque.bmp
-	(see output.txt for array)
 
-You can find an example of how to implement the header file here: https://github.com/sparkfun/SparkFun_SSD1320_OLED_Arduino_Library/tree/master/examples/Example2_Graphics
+Example output:
+
+    static const unsigned char myGraphic[2560] PROGMEM = {
+    0xf, 0xf0, 0x44, 0x44, 0x44, 0x44, 
+    0x84, 0xa9, 0xaa, 0xaa, 0xaa, 0xaa, 0xaa, 0xaa, 
+    0xaa, 0x6a, 0x44, 0x44, 0x54, 0xa9, 0xaa, 0xaa, 
+    0xaa, 0xaa, 0xaa, 0xaa, 0xaa, 0x6a, 0x25, 0x22, 
+
+
+You can find an example of how to implement the header file [here](https://github.com/sparkfun/SparkFun_SSD1320_OLED_Arduino_Library/tree/master/examples/Example2_Graphics).
 
 This is pretty much my first hack at python so I greatly welcome improvements with a pull request.
 
