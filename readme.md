@@ -14,7 +14,7 @@ Three bitmaps are provided as an example. Requires python v2.7.
 **To use your own image:**
 
 * Convert your JPEG or whatever format to BMP
-* Down convert the BMP to Black and White only. This should retain the grayscale components but remove any color information.
+* Down convert the BMP to Black and White only. This should retain the grayscale components but remove any color information. We use [paint.net](https://www.getpaint.net/) and recommend it for use with this repo. 
 * Run the python script against your bitmap
 * An output.txt file will be generated. Copy and paste the contents of this file to a image.h file
 * Send this array to the display of your choice. See the example below about how to implement the header file.
