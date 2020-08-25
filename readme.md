@@ -21,7 +21,7 @@ Three bitmaps are provided as an example. Requires python v2.7.
 
 Usage:
 
-    python bmptoarray.py macaque.bmp
+    python bmp2array.py macaque.bmp
 
 Example output:
 
