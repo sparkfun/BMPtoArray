@@ -68,7 +68,7 @@ for i in range(colorsUsed[0]):
     #print hexlify(colorIndex[i])
 
 #Make a string to hold the output of our script
-arraySize = (len(contents) - offset[0]) / 2
+arraySize = int((len(contents) - offset[0]) / 2)
 outputString = "/* This was generated using the SparkFun BMPtoArray python script" + '\r'
 outputString += " See https://github.com/sparkfun/BMPtoArray for more info */" + '\r\r'
 outputString += "static const unsigned char myGraphic[" + str(arraySize) + "] PROGMEM = {" + '\r'
