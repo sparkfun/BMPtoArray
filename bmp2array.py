@@ -39,19 +39,19 @@ infile.close()
 data = [contents[2], contents[3], contents[4], contents[5]]
 fileSize = struct.unpack("I", bytearray(data))
 
-print "Size of file:", fileSize[0]
+print("Size of file:", fileSize[0])
 
 #Get the header offset amount
 data = [contents[10], contents[11], contents[12], contents[13]]
 offset = struct.unpack("I", bytearray(data))
 
-print "Offset:", offset[0]
+print("Offset:", offset[0])
 
 #Get the number of colors used
 data = [contents[46], contents[47], contents[48], contents[49]]
 colorsUsed = struct.unpack("I", bytearray(data))
 
-print "Number of colors used:", colorsUsed[0]
+print("Number of colors used:", colorsUsed[0])
 
 #Create color definition array and init the array of color values
 colorIndex = bytearray(colorsUsed[0])
@@ -104,5 +104,5 @@ outfile = open("output.txt","w")
 outfile.write(outputString)
 outfile.close()
 
-print "output.txt complete"
-print "Copy and paste this array into a image.h or other header file"
+print("output.txt complete")
+print("Copy and paste this array into a image.h or other header file")
