@@ -9,7 +9,7 @@ This script takes in a bitmap and converts the bitmap into 4-bit grayscale. An a
 
 This is very useful if you have a bitmap that you'd like to output onto a grayscale display (like the SparkFun flexible OLED). I attempted to use the bitmap2lcd program but found it very hard to use and over blown (and costs money) to generate an image array.
 
-Three bitmaps are provided as an example. Requires python v2.7.
+Three bitmaps are provided as an example. Requires python v2.7+.
 
 **To use your own image:**
 
